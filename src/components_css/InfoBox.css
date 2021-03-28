@@ -1,0 +1,77 @@
+.infoBox {
+  flex: 1;
+  padding-right: 5px !important;
+  transition: all 0.5s !important;
+  border-radius: 15px !important;
+  border-top: 4px solid greenYellow;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.178) !important;
+}
+
+.infoBox:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+.infoBox:focus {
+  transform: translateY(-8px);
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 10px;
+}
+
+.infoBox--selected {
+  border-top:10px solid greenyellow !important;
+}
+
+.infoBox--red {
+  border-color: red !important;
+}
+
+.infoBox__cases--green {
+  color: rgb(122, 243, 122) !important;
+}
+
+.infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253); */
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+
+@media screen and (max-width: 430px) {
+  .infoBox__title {
+    font-size: 0.9rem !important;
+  }
+  .infoBox__cases {
+    font-size: 1.3rem !important;
+  }
+  .infoBox__total {
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+  }
+  
+}
+
+
+@media screen and (max-width: 300px) {
+  .infoBox__title {
+    font-size: 0.5rem !important;
+  }
+  .infoBox__cases {
+    font-size: 0.8rem !important;
+  }
+  .infoBox__total {
+    font-weight: 600 !important;
+    font-size: 0.7rem !important;
+  }
+  
+}
